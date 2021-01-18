@@ -1,4 +1,4 @@
-class IfSample {
+class IfSample1 {
 public static void main(String args []) {
 int x, y;
 x = 10;
