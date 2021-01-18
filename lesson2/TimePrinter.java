@@ -12,6 +12,6 @@ int min = m % 60;
 
 int h = (m-min) / 60;
 
-System.out.println(h + "часов" + min + "минут" + sec + "секунд");
+System.out.println(h + "hour" + min + "minute" + sec + "second");
 }
 }
