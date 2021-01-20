@@ -1,6 +1,6 @@
 public class TimePr2 {
 public static void main(String[] args) {
-int s=4500;
+int s=123734500;
 int sec=s%60;
 int m=(s-sec)/60;
 int min=m%60;
