@@ -8,7 +8,7 @@ public class RadiusTask7 {
         int a=10;
         int b=10;
         int r=22;
-        if ((a*b)<= (3.14*r*2)){
+        if ( r * r >= ( a * a + b * b ) / 4){
             System.out.println("Круглая картонка закроет прямоугольное отверстие");
         }else{
             System.out.println("Круглая картонка не закроет прямоугольное отверстие");
