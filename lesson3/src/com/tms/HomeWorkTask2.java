@@ -10,7 +10,7 @@ public class HomeWorkTask2 {
         int a = 2;
         int b = 4;
         int c = 7;
-        if ( a + b > c || a + c > b || b + c > a){
+        if ( a + b > c | a + c > b | b + c > a){
             System.out.println("Треугольник существует");
         }else{
             System.out.println("Треугольника не существует");
