@@ -12,7 +12,7 @@ public class HomeWorkTask1 {
         } else {
             System.out.println("Число положительное");
         }
-        if (x > 0 & x < 9) {
+        if (x > 0 & x < 10) {
             System.out.println("Число однозначное");
         } else {
             System.out.println("Число двухзначное");
