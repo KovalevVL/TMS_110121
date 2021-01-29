@@ -16,7 +16,7 @@ public class Task12BegginerChapter {
                 break;
             }
         }
-        System.out.println("Сумма чисел = " + sum);
+        System.out.println("Сумма первых чисел = " + sum);
 
     }
 }
