@@ -9,16 +9,16 @@ public class Task9 {
         double pro = 1;
         int n = 0;
         int y = 3;
-        int x = (int)(Math.random()*y);
+        int x = (int) (Math.random() * y);
         while (x != 0) {
             System.out.println(x);
-            pro *= x;
             n++;
-            x =  (int)(Math.random()*y);
+            x = (int) (Math.random() * y);
+            pro *= x;
         }
-        if ( n != 0 ){
-            averagePro = pro/n;
-        }else{
+        if (n != 0) {
+            averagePro = pro / n;
+        } else {
             averagePro = 0;
         }
         System.out.println("Произведение" + pro);
