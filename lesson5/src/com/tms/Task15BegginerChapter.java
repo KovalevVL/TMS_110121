@@ -16,8 +16,8 @@ public class Task15BegginerChapter {
             array[array.length - i - 1] = array[i];
             array[i] = temp;
         }
-        for (i=0; i< array.length; i++)
-        System.out.println(array[i]);
+        for (i = 0; i < array.length; i++)
+            System.out.println(array[i]);
     }
 }
 
