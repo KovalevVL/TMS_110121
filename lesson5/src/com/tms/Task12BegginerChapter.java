@@ -1,6 +1,6 @@
 package com.tms;
 
-//Найдите сумму первых n целых чисел, которые делятся на 3
+//*Найдите сумму первых n целых чисел, которые делятся на 3
 
 public class Task12BegginerChapter {
     public static void main(String[] args) {
