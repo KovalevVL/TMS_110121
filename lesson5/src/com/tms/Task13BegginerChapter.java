@@ -10,7 +10,7 @@ public class Task13BegginerChapter {
         for (i = 1; i < array.length; i++) {
             array[i] = (int) (Math.random() * 30);
             System.out.println(array[i]);
-            if (array[i] > max)   max = array[i];
+            if (array[i] > max) max = array[i];
         }
         System.out.println("Максимальное число " + max);
     }
