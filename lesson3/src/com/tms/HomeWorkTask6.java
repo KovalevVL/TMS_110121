@@ -1,7 +1,7 @@
 package com.tms;
 
-//Даны два числа.
-//Вывести большее из них.
+//**Даны два числа.
+//Вывести большее из них.**
 
 public class HomeWorkTask6 {
     public static void main (String[] args){
