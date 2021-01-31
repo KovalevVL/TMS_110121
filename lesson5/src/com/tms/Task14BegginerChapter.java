@@ -13,6 +13,7 @@ public class Task14BegginerChapter {
         for (i = 1; i < array.length; i++) {
             array[i] = (int) (Math.random() * 10) + 1;
             System.out.println("Оценка " + array[i]);
+            if (min == 0) min = array[i];
             if (array[i] < min) {
                 min = array[i];
                 imin = i;
