@@ -6,7 +6,7 @@ public class Task15BegginerChapter {
     public static void main(String args[]) {
         int array[] = new int[6];
         int i;
-        int z = 0;
+        int z;
         for (i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 12);
             System.out.println(array[i]);
@@ -16,8 +16,7 @@ public class Task15BegginerChapter {
             array[array.length - i - 1] = array[i];
             array[i] = temp;
         }
-        for (i = 0; i < array.length; i++)
-            System.out.println(array[i]);
+        for (i = 0; i < array.length; i++) ;
+        System.out.println(array[i]);
     }
 }
-
