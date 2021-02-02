@@ -4,11 +4,16 @@ package com.tms;
 
 public class Task11 {
     public static void main(String[] args) {
-        int x = (int) (Math.random() * 4);
-        if (x % x == 0 & x % 1 == 0) {
-            System.out.println(x + " число является простым");
-        } else {
-            System.out.println(x + " число является составным");
+        int n = (int) (Math.random() * 20)+1;
+        int i;
+        for (i = 2; i < n; i++) {
+            n = (int) (Math.random() * 20)+1;
+            if (n % i == 0 ) {
+                System.out.println("Число " + n + " - является составным");
+            } else {
+                System.out.println("Число " + n + " - является простым");
+            return;
+            }
         }
     }
 }
