@@ -26,11 +26,11 @@ public class Task16BegginerChapter {
         System.out.println("Максимальный элемент массива" + max + "Индекс максимального элемента массива" + indexMax);
         System.out.println("Минимальный элемент массива " + min + " Индекс минимального элемента массива" + indexMin);
         if (indexMax > indexMin) {
-            for (int i = indexMin; i <= indexMax; i++) {
+            for (int i = indexMin; i <= indexMax - 1; i++) {
                 sum += array[i];
             }
         } else {
-            for (int i = indexMax; i <= indexMin; i++) {
+            for (int i = indexMax; i <= indexMin + 1; i++) {
                 sum += array[i];
             }
         }
