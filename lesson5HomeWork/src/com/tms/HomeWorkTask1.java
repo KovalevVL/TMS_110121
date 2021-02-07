@@ -6,12 +6,12 @@ package com.tms;
 public class HomeWorkTask1 {
     public static void main(String[] args) {
         int day = 10;
-        int sum = 0;
+        float sum = 0;
         double nDay;
         for (int i = 1; i <= 7; i++) {
             nDay = day * 0.1;
             day = (int) (day + nDay);
-            sum+=day;
+            sum += day;
         }
         System.out.println(sum);
     }
