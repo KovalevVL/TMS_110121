@@ -11,7 +11,7 @@ public class HomeWorkTask1 {
         for (int i = 1; i <= 7; i++) {
             nDay = day * 0.1;
             day = (int) (day + nDay);
-            sum += day;
+            sum+=day;
         }
         System.out.println(sum);
     }
