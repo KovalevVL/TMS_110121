@@ -5,8 +5,7 @@ package com.tms;
 public class HomeWorkTask5 {
     public static void main(String[] args) {
         double sm = 2.54;
-        int inches = 1;
-        for (inches = 1; inches <= 20; inches++) {
+        for (int inches = 1; inches <= 20; inches++) {
             sm = inches * 2.54;
             System.out.println("Перевод из дюймов " + inches + "  в сантиметры " + sm);
         }
