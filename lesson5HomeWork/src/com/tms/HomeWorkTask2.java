@@ -5,11 +5,9 @@ package com.tms;
 public class HomeWorkTask2 {
     public static void main(String[] args) {
         int ameba = 1;
-        int time = 0;
-        int rezAmeba;
-        for (time = 0; time < 24; time += 3) {
+        for (int time = 0; time < 24; time += 3) {
             ameba *= 2;
         }
-        System.out.println("через " + time + " будет " + ameba);
+        System.out.println("через 24 часа будет " + ameba);
     }
 }
