@@ -9,8 +9,8 @@ public class Task14BegginerChapter {
         int min = 0;
         int imin = 0;
         int imax = 0;
-        int i = 1;
-        for (i = 1; i < array.length; i++) {
+        int i = 0;
+        for (i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 10) + 1;
             System.out.println("Оценка " + array[i]);
             if (min == 0) min = array[i];
