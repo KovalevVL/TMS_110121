@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 public class HomeWorkBegginerChapter2Task22 {
     public static void main(String[] args) {
         String str = " В Ja4va сCтрока являеCB3тся основным носиC4телем текDDDстовой информации.";
-        Pattern pattern = Pattern.compile("[\\d(A-IK-Z]");
+        Pattern pattern = Pattern.compile("[\\dA-IK-Z]");
         Matcher matcher = pattern.matcher(str);
         while (matcher.find()) {
             System.out.println(matcher.group());
