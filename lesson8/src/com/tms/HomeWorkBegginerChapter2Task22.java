@@ -7,8 +7,8 @@ import java.util.regex.Pattern;
 //Вывести их на страницу.
 public class HomeWorkBegginerChapter2Task22 {
     public static void main(String[] args) {
-        String str = " В Ja4va сCтрока являеCB3тся основным носиC4телем текDDDстовой информации.";
-        Pattern pattern = Pattern.compile("[\\d(A-IK-Z)]");
+        String str = " 0xFFF В Java строка является основным носителем текстовой 0xAAA информации.";
+        Pattern pattern = Pattern.compile("0[Xx]{1,3}[(a-fA-F)(0-9)]{1,3}");
         Matcher matcher = pattern.matcher(str);
         while (matcher.find()) {
             System.out.println(matcher.group());
