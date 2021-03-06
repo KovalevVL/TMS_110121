@@ -44,15 +44,9 @@ public class Transport {
         this.brand = brand;
     }
 
-    //Вывод  на экран
-    public void print() {
-        System.out.println(getEnergy() + getMaxSpeed() + getWeight() + getBrand());
-    }
-
     //расчет мощности в киловватах
-    public double energyCalcul() {
+    public int energyCalcul() {
         double kilowwat = getEnergy() / 0.74;
-        System.out.println("Всего киловват " + kilowwat);
-        return kilowwat;
+        return (int) kilowwat;
     }
 }

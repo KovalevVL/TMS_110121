@@ -44,12 +44,11 @@ public class CargoTransport extends TransportLand {
     }
 
     @Override
-    public double energyCalcul() {
-        return getEnergy() / 0.74;
+    public int energyCalcul() {
+        return (int) (getEnergy() / 0.74);
     }
 
-    @Override
-    public void print() {
-        System.out.println("Грузовой траспорт марки " + getBrand() + "мощностью " + getEnergy() + " с максимальной скоростью " + getMaxSpeed() + "");
+    public void cargoTr() {
+        System.out.println("Грузовой наземный транспорт мощностью " + getEnergy() + " л.с. или " + energyCalcul() + " киловват. Максимальной скоростью " + getMaxSpeed() + " км/ч . Общей массой " + getWeight() + " кг. Брендом " + getBrand());
     }
 }

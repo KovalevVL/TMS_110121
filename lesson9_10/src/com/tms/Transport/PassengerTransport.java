@@ -26,8 +26,8 @@ public class PassengerTransport extends TransportLand {
     }
 
     @Override
-    public double energyCalcul() {
-        return getEnergy() / 0.74;
+    public int energyCalcul() {
+        return (int) (getEnergy() / 0.74);
     }
 
     @Override
@@ -41,14 +41,18 @@ public class PassengerTransport extends TransportLand {
     }
 
     //Метод определения всей пройденной дистанции
-    private void fullDist(double time) {
+    public void fullDist(double time) {
         double distans = ((double) getMaxSpeed() * time);
         System.out.println("За время " + time + " часов. Автомобиль марки " + getBrand() + " с максимальной скоростью " + getMaxSpeed());
     }
 
     //Метод определения затраченного топлива , с учетом пройденного расстояния
-    private void FuelSum(double distans) {
+    public void fuelSum(double distans) {
         double sumFuel = (distans / 100) * getFuelFlow();
-        System.out.println("Потратив при этом " + sumFuel + " топлива");
+        System.out.println("Потратив при этом " + sumFuel + "  литров топлива");
+    }
+
+    public void passengersTr() {
+        System.out.println("Легковой наземный транспорт мощностью " + getEnergy() + " л.с. или " + energyCalcul() + " киловват. Максимальной скоростью " + getMaxSpeed() + " км/ч . Общей массой " + getWeight() + " кг. Брендом " + getBrand());
     }
 }

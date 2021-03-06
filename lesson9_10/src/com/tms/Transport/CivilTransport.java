@@ -2,7 +2,7 @@ package com.tms.Transport;
 
 //В  гражданский траспорт добовляем: количество пассажиров, наличие бизнесс-класса
 public class CivilTransport extends AirTransport {
-    int numberPassengers;
+    int numberPassengers = 30;
     boolean businessClass;
 
     @Override
@@ -37,7 +37,7 @@ public class CivilTransport extends AirTransport {
 
     //метод проверяемости количества пассажиров в самолете
 
-    public void MaxPassengeres(int maxPassengeres) {
+    public void maxPassengeres(int maxPassengeres) {
         if (maxPassengeres <= numberPassengers) {
             System.out.println("Количество пассажаров соответсвует количеству посадочных мест");
         } else {
@@ -45,8 +45,7 @@ public class CivilTransport extends AirTransport {
         }
     }
 
-    @Override
-    public void print() {
-        System.out.println("Гражданский транспорт мощностью " + getEnergy() + "максимальной скоростью " + getMaxSpeed() + " общей массой " + getWeight() + " и брендом " + getBrand());
+    public void civilTr() {
+        System.out.println("Гражданский воздушный траспорт мощностью " + getEnergy() + " л.с. или " + energyCalcul() + " киловват. Максимальной скоростью " + getMaxSpeed() + " км/ч . Общей массой " + getWeight() + " кг. Брендом " + getBrand());
     }
 }

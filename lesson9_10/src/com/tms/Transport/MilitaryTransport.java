@@ -5,7 +5,7 @@ public class MilitaryTransport extends AirTransport {
     boolean ejection = true;
     int numberMissiles;
 
-    //метод, выстер, проверяем количество ракет
+    //метод, проверки количество ракет
 
     public void availabilityMissiles(int missiles) {
         if (missiles != 0) {
@@ -54,8 +54,7 @@ public class MilitaryTransport extends AirTransport {
         return 1800;
     }
 
-    @Override
-    public void print() {
-        System.out.println("Военный транспорт мощностью " + getEnergy() + "максимальной скоростью " + getMaxSpeed() + " общей массой " + getWeight() + " и брендом " + getBrand());
+    public void militaryTr() {
+        System.out.println("Военный воздушный траспорт мощностью " + getEnergy() + " л.с. или " + energyCalcul() + " киловват. Максимальной скоростью " + getMaxSpeed() + " км/ч . Общей массой " + getWeight() + " кг. Брендом " + getBrand());
     }
 }
