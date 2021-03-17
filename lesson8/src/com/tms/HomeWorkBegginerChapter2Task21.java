@@ -4,38 +4,38 @@ package com.tms;
 //Сравнить скорость их выполения.
 public class HomeWorkBegginerChapter2Task21 {
     public static void main(String[] args) {
-        long starTime1 = System.currentTimeMillis();
+        long starTime = System.currentTimeMillis();
         String str = " В Java строка является основным носителем текстовой информации.";
         for (int i = 0; i < 15; i++) {
             str += str;
         }
-        long endTime1 = System.currentTimeMillis();
-        long Time1 = endTime1 - starTime1;
-        System.out.println(" Программа выполнялась " + Time1 + " миллисекунд");
+        long endTime = System.currentTimeMillis();
+        long Time = endTime - starTime;
+        System.out.println(" Программа выполнялась миллисекунд " + Time);
 
-        long startTime2 = System.currentTimeMillis();
-        StringBuilder sb = new StringBuilder();
+        long startTime1 = System.currentTimeMillis();
+        StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < 15; i++) {
-            sb.append("В Java строка является основным носителем текстовой информации.");
+            stringBuilder.append("В Java строка является основным носителем текстовой информации.");
+        }
+        long endTime1 = System.currentTimeMillis();
+        long Time1 = endTime1 - startTime1;
+        System.out.println(" Программа выполнялась миллисекунд " + Time1);
+
+        long starTime2 = System.currentTimeMillis();
+        StringBuffer stringBuffer = new StringBuffer();
+        for (int i = 0; i < 15; i++) {
+            stringBuffer.append("В Java строка является основным носителем текстовой информации.");
         }
         long endTime2 = System.currentTimeMillis();
-        long Time2 = endTime2 - startTime2;
-        System.out.println(" Программа выполнялась " + Time2 + " миллисекунд");
+        long Time2 = endTime2 - starTime2;
+        System.out.println(" Программа выполнялась миллисекунд " + Time2);
 
-        long starTime3 = System.currentTimeMillis();
-        StringBuffer stBuf = new StringBuffer();
-        for (int i = 0; i < 15; i++) {
-            stBuf.append("В Java строка является основным носителем текстовой информации.");
-        }
-        long endTime3 = System.currentTimeMillis();
-        long Time3 = endTime3 - starTime3;
-        System.out.println(" Программа выполнялась " + Time3 + " миллисекунд");
-
-        if (Time1 < Time2 & Time1 < Time3) {
+        if (Time < Time1 & Time1 < Time2) {
             System.out.println("Самая быстрая скорость выполения у операции сложения строк");
-        } else if (Time2 < Time1 & Time2 < Time3) {
+        } else if (Time1 < Time2 & Time1 < Time) {
             System.out.println("Самая быстра скорость выполения у операции StringBuilder");
-        } else if (Time3 < Time1 & Time3 < Time2) {
+        } else if (Time2 < Time & Time2 < Time1) {
             System.out.println("Самая быстра скорость выполения операции у StringBuffer");
         }
     }
