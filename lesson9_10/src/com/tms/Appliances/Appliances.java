@@ -2,19 +2,21 @@ package com.tms.Appliances;
 
 //Создать иерархию классов, описывающих бытовую технику. Создать несколько объектов описанных классов, часть из них включить в розетку.
 //Иерархия должна иметь хотя бы три уровня
-public class Appliances {
-    private boolean on = true;
+abstract class Appliances {
     public String madeIn;
+    public static boolean turn = true;
 
     Appliances(String madeIn) {
-        this.madeIn=madeIn;
+        this.madeIn = madeIn;
     }
 
-    public void TurnOn() {
-        if (on) {
-            System.out.println("Бытовая техника подключена в розетку");
+    public void Turn220() {
+        if (turn) {
+            System.out.println("Включено");
         } else {
-            System.out.println("Бытовая техника не подключена в розетку");
+            System.out.println("Выключено");
         }
     }
+
+
 }
