@@ -15,7 +15,7 @@ public class PassengerTransport extends TransportLand  implements IEnergyCacul{
     //Метод определения всей пройденной дистанции
     public void fullDist(double time) {
         double distans = ((double) getMaxSpeed() * time);
-        System.out.println("За время " + time + " часов. Автомобиль марки " + getBrand() + " с максимальной скоростью " + getMaxSpeed() + "пройдет дистанцию " + distans);
+        System.out.println("За время " + time + " часов. Автомобиль марки " + getBrand() + " с максимальной скоростью " + getMaxSpeed() + " пройдет дистанцию " + distans + " км ");
     }
 
     //Метод определения затраченного топлива , с учетом пройденного расстояния
