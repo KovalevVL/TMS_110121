@@ -5,6 +5,12 @@ public class MilitaryTransport extends AirTransport {
     boolean ejection = true;
     int numberMissiles;
 
+    MilitaryTransport(double energy, int maxSpeed, double weight, String brand, int wingspan, int laneLength, boolean ejection, int numberMissiles) {
+        super(energy, maxSpeed, weight, brand, wingspan, laneLength);
+        this.ejection=ejection;
+        this.numberMissiles=numberMissiles;
+    }
+
     //метод, проверки количество ракет
 
     public void availabilityMissiles(int missiles) {
@@ -22,39 +28,5 @@ public class MilitaryTransport extends AirTransport {
         } else {
             System.out.println("У вас нет такое системы");
         }
-    }
-
-    @Override
-    public double getEnergy() {
-        return 2300;
-    }
-
-    @Override
-    public int getMaxSpeed() {
-        return 1800;
-    }
-
-    @Override
-    public double getWeight() {
-        return 140000;
-    }
-
-    @Override
-    public String getBrand() {
-        return "Stels";
-    }
-
-    @Override
-    public int getWingspan() {
-        return 39;
-    }
-
-    @Override
-    public int getLaneLength() {
-        return 1800;
-    }
-
-    public void militaryTr() {
-        System.out.println("Военный воздушный траспорт мощностью " + getEnergy() + " л.с. или " + energyCalcul() + " киловват. Максимальной скоростью " + getMaxSpeed() + " км/ч . Общей массой " + getWeight() + " кг. Брендом " + getBrand());
     }
 }

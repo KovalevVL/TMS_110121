@@ -5,6 +5,12 @@ public class TransportLand extends Transport {
     private int numberWheels;
     private double fuelFlow;
 
+    TransportLand(double energy, int maxSpeed, double weight, String brand,int numberWheels,double fuelFlow) {
+        super(energy, maxSpeed, weight, brand);
+        this.numberWheels=numberWheels;
+        this.fuelFlow=fuelFlow;
+    }
+
 
     // метод описания который будет возвращать составленную строку
 

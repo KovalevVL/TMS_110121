@@ -5,6 +5,12 @@ public class AirTransport extends Transport {
     private int wingspan;
     private int laneLength;
 
+    AirTransport(double energy, int maxSpeed, double weight, String brand,int wingspan,int laneLength) {
+        super(energy, maxSpeed, weight, brand);
+        this.laneLength=laneLength;
+        this.wingspan=wingspan;
+    }
+
     // метод описания который будет возвращать составленную строку
     public int getWingspan() {
         return wingspan;

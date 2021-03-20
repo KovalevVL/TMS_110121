@@ -2,13 +2,18 @@ package com.tms.Transport;
 
 //Разрабоать иерархию классво транспорта.
 //В класс траспорта добавить поля: мощность, максимальная скорость, масса, марка.
-
-
-public class Transport {
+abstract class Transport  implements IEnergyCacul{
     private double energy;
     private int maxSpeed;
     private double weight;
     private String brand;
+
+    Transport(double energy, int maxSpeed, double weight, String brand) {
+        this.energy = energy;
+        this.maxSpeed = maxSpeed;
+        this.weight = weight;
+        this.brand = brand;
+    }
 
     // метод описания который будет возвращать составленную строку
 
@@ -16,7 +21,7 @@ public class Transport {
         return energy;
     }
 
-    public void setEnergy() {
+    public void setEnergy(double energy) {
         this.energy = energy;
     }
 
@@ -24,15 +29,15 @@ public class Transport {
         return maxSpeed;
     }
 
-    public void setMaxSpeed() {
+    public void setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
 
-    public double getWeight() {
-        return weight;
+    public int getWeight() {
+        return (int) weight;
     }
 
-    public void setWeight() {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
@@ -44,9 +49,5 @@ public class Transport {
         this.brand = brand;
     }
 
-    //расчет мощности в киловватах
-    public int energyCalcul() {
-        double kilowwat = getEnergy() / 0.74;
-        return (int) kilowwat;
     }
-}
+
