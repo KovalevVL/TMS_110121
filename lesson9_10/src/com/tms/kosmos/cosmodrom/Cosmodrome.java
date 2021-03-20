@@ -4,7 +4,7 @@ import com.tms.kosmos.start.IStart;
 
 public class Cosmodrome {
 
-    public void startShattle(IStart shattle) {
+    public static void startShattle(IStart shattle) {
         if (shattle.checkingSystem()) {
             System.out.println("Предстартовая проверка прошла удачно");
             shattle.startEngine();

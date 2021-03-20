@@ -1,9 +1,8 @@
 package com.tms.kosmos.shattle;
 
-import com.tms.kosmos.cosmodrom.Cosmodrome;
 import com.tms.kosmos.start.IStart;
 
-public class Shattle extends Cosmodrome implements IStart {
+public class Shattle implements IStart {
 
     @Override
     public boolean checkingSystem() {
