@@ -1,14 +1,17 @@
 package com.tms.human;
 
-public class RunnerMan extends Man {
+import com.tms.human.jacket.Jacket;
+import com.tms.human.pants.Pants;
+import com.tms.human.shoes.Shoes;
 
-    RunnerMan(String name, String jacket, String pants, String shoes) {
-        super(name, jacket, pants, shoes);
+public class RunnerMan {
+    public static void main (String [] args){
+        Man man = new Man(new Jacket(),new Pants(),new Shoes());
+        man.dressUp();
+        man.takeOff();
     }
 
-    public static void main(String[] args) {
-        Man man = new Man("Vladimir", " куртку NIKE", " штаны PUMA", " кроссовки ADIDAS");
-        man.PutMan();
-        man.TakeOffMan();
-    }
 }
+
+
+
