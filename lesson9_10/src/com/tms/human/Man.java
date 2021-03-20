@@ -1,61 +1,67 @@
 package com.tms.human;
 
-import com.tms.human.jacket.IJacket;
-import com.tms.human.pants.IPants;
-import com.tms.human.shoes.IShoes;
+import com.tms.human.jacket.Jacket;
+import com.tms.human.pants.Pants;
+import com.tms.human.shoes.Shoes;
 
-public class Man implements IJacket, IPants, IShoes {
-    public String name;
-    public String jacket;
-    public String pants;
-    public String shoes;
 
-    Man(String name, String jacket, String pants, String shoes) {
-        this.name = name;
+public class Man implements Does {
+    private Jacket jacket;
+    private Pants pants;
+    private Shoes shoes;
+
+    public Man(Jacket jacket, Pants pants, Shoes shoes) {
         this.jacket = jacket;
         this.pants = pants;
         this.shoes = shoes;
     }
 
-    public void PutMan() {
-        putJacket();
-        putPants();
-        putShoes();
+    public Man() {
     }
 
-    public void TakeOffMan() {
-        takeOffJacket();
-        takeOffPants();
-        takeOffShoes();
+    public Jacket getJacket() {
+        return jacket;
     }
 
-    @Override
-    public void putJacket() {
-        System.out.println(name + " надел на себя " + jacket);
+    public void setJacket() {
+        this.jacket = jacket;
     }
 
-    @Override
-    public void takeOffJacket() {
-        System.out.println(name + " снял с себя " + jacket);
+    public Pants getPants() {
+        return pants;
     }
 
-    @Override
-    public void putPants() {
-        System.out.println(name + " надел на себя " + pants);
+    public void setPants() {
+        this.pants = pants;
     }
 
-    @Override
-    public void takeOffPants() {
-        System.out.println(name + " снял с себя " + pants);
+    public Shoes getShoes() {
+        return shoes;
+    }
+
+    public void setShoes() {
+        this.shoes = shoes;
     }
 
     @Override
-    public void putShoes() {
-        System.out.println(name + " надел на себя " + shoes);
+    public String name(String name) {
+        return null;
     }
 
     @Override
-    public void takeOffShoes() {
-        System.out.println(name + " снял с себя " + shoes);
+    public void dressUp() {
+        jacket.putJacket();
+        pants.putPants();
+        shoes.putShoes();
+    }
+
+    @Override
+    public void takeOff() {
+        jacket.takeOffJacket();
+        pants.takeOffPants();
+        shoes.takeOffShoes();
     }
 }
+
+
+
