@@ -1,4 +1,4 @@
-package com.tms;
+package com.tms.Task33;
 
 //Создать файл с текстом, почитать, подсчитать в тексте количество знаков препинания и слов.
 
@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 public class WordText {
 
     public static void main(String[] args) throws Exception {
-        String TextNameFile = new String("D:\\VL_it\\TMS_110121\\lesson14\\src\\com\\tms\\lesson14");
+        String TextNameFile = new String("D:\\VL_it\\TMS_110121\\lesson14\\src\\com\\tms\\Task33\\lesson14");
         BufferedReader tx = new BufferedReader(new FileReader(TextNameFile));
         Scanner sc = new Scanner(new FileInputStream(TextNameFile));
         int punct = 0;
