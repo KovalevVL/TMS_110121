@@ -11,7 +11,7 @@ package com.tms.homeWorkDop.Dop2;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class textFormat {
+public class TextFormat {
     public static int numberOfWords(String line) {
         int numberOfWords = 0;
         Pattern pattern = Pattern.compile("\\w+");

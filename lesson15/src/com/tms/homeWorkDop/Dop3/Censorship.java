@@ -18,7 +18,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class censorship {
+public class Censorship {
     public static void main(String[] args) throws IOException {
         int count = 0;
         BufferedReader text = new BufferedReader(new FileReader("D:\\VL_it\\TMS_110121\\lesson15\\src\\com\\tms\\homeWorkDop\\Dop3\\textCensorship.txt"));
@@ -50,7 +50,7 @@ public class censorship {
             if (count > 0) {
                 System.out.println('\n' + "Текст не прошел цензуру");
             }
-            System.out.println('\n' + str[i] + " , находящиеся в censorship - встречается в данном тексте  - " + count + '\n');
+            System.out.println('\n' + str[i] + " , находящиеся в Censorship - встречается в данном тексте  - " + count + '\n');
             text1.close();
         }
     }
