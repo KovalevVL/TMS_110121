@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="devices">
+        <complexType>
+            <sequence>
+                <element name="devices" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="Comp">
+        <sequence>
+            <element name="Origin" type="string" default="China"/>
+            <element name="Currency" type="int"/>
+        </sequence>
+    </complexType>
+    <complexType name="VideoCard">
+        <sequence>
+            <element name="Origin" type="string" default="USA"/>
+            <element name="Currency" type="int"/>
+            <element name="Critical" type="string" default="yes"/>
+        </sequence>
+    </complexType>
+    <complexType name="Type">
+        <sequence>
+            <element name="Built-in" type="boolean" default="true"/>
+            <element name="Unbuilt" type="boolean"/>
+        </sequence>
+    </complexType>
+    <complexType name="HDD">
+        <sequence>
+            <element name="Origin" type="string" default="China"/>
+            <element name="Currency" type="int"/>
+            <element name="Critical" type="string" default="yes"/>
+        </sequence>
+    </complexType>
+</schema>

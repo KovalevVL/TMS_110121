@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<devices>
+    <devices model="Acer">
+        <date>2008</date>
+        <detalis>
+            <name>Comp</name>
+            <origin>China</origin>>
+            <price currency="USD">3600</price>
+        </detalis>
+        <detalis>
+            <name>VideoCard</name>
+            <origin>USA</origin>
+            <Type>
+                <Built-in>true</Built-in>
+                <Unbuilt>false</Unbuilt>
+            </Type>
+            <price currency="USD">300</price>
+            <critical>yes</critical>
+        </detalis>
+        <detalis>
+            <name>HDD</name>
+            <origin>China</origin>
+            <price currency="USD">450</price>
+            <critical>yes</critical>
+        </detalis>
+    </devices>
+</devices>
